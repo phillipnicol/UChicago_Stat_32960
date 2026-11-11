@@ -1,0 +1,40 @@
+# macOS
+.DS_Store
+
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.nav
+*.nlo
+*.nls
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.vrb
+*.xdv
+
+# LaTeX temporary directories
+_minted-*/
+tmp/
+
+# Compiled lecture/notes PDFs, except for the main notes
+lectures/*.pdf
+notes/*.pdf
+!notes/stat_32960.pdf

@@ -1,0 +1,47 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\Var}{Var}
+
+
+\graphicspath{{figures/}{../figures/}}
+\hypersetup{pdftitle={Dimension Reduction}}
+
+\title{UChicago Stat 32960\\[0.5em]\large Topics in dimension reduction}
+\author{Phillip Nicol}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\clearpage
+
+\input{../lectures/01-introduction}
+\clearpage
+\input{../lectures/02-pca}
+\clearpage
+\input{../lectures/03-svd}
+\clearpage
+\input{../lectures/04-random-matrix-theory}
+
+\end{document}

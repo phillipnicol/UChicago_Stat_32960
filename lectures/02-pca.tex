@@ -1,0 +1,52 @@
+% !TeX root = ../notes/stat_32960.tex
+
+\section{Principal Component Analysis}
+\label{sec:pca}
+
+% Add lecture content here.
+
+\subsection{Population and sample principal components}
+
+\begin{definition}
+    Let $X \in \R^p$ be a random vector with mean $\mu = \E[X]$ and covariance matrix $\Sigma = \Cov(X)$. 
+    The \textbf{first population principal component direction} is a unit vector $v_1$ such that 
+    \begin{equation}
+        v_1 \in \arg \max_{v \in \R^p, \|v\|_2 = 1} \Var(X^{\top} v) 
+    \end{equation}
+
+    Calculation that this is $v^{\top} \Sigma v$ maximization. 
+
+    The \textbf{second population principal component direction} is a unit vector $v_2$ that maximizes the 
+    variance of $X^{\top} v$ subject to the constraint that $v_2$ is orthogonal to $v_1$: 
+    \begin{equation}
+        v_2 \in \arg \max_{v \in \R^p, \|v\|_2 = 1, v^{\top} v_1 = 0} \Var(X^{\top} v)
+    \end{equation}
+
+    In general, blah 
+
+    The $k$-th population principal component score is defined as the random variable
+    \begin{equation}
+        Z_k = (X - \mu)^{\top} v_k
+    \end{equation}
+
+    \begin{proposition}
+        Suppose $X \in \R^p$ is a random vector with mean $\mu$ and covariance matrix $\Sigma$.
+        Suppose that the eigenvalues of $\Sigma$ are distinct and ordered as 
+        $\lambda_1 > \lambda_2 > \cdots > \lambda_p > 0$ with corresponding eigenvectors $v_1, v_2, \ldots, v_p$. 
+        Then the population principal component directions are given by the eigenvectors of $\Sigma$, and the population
+        principal component scores satisfy $\Var(Z_k) = \lambda_k$ for $k = 1, 2, \ldots, p$ and $\Cov(Z_k, Z_j) = 0$ for $k \neq j$.
+    \end{proposition}
+    \begin{proof}
+        TODO
+    \end{proof}
+
+    EXAMPLE with $\mathcal{N}(0, \Sigma)$ 
+
+    Statistical interpretation (signal plus noise)
+
+    Sample PCs
+\end{definition}
+
+
+
+
