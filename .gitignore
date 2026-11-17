@@ -38,3 +38,6 @@ tmp/
 lectures/*.pdf
 notes/*.pdf
 !notes/stat_32960.pdf
+
+# Keep the compiled syllabus in the repository
+!syllabus/syllabus.pdf
